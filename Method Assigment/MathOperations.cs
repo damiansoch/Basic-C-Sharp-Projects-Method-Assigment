@@ -6,7 +6,7 @@ namespace Method_Assigment
 {
     public class MathOperations
     {
-        public static void Multi(int number)
+        public static int Multi(int number)
         {
             Random random = new Random();
             int randomNumber = random.Next(0, 100);
@@ -15,9 +15,11 @@ namespace Method_Assigment
             Console.WriteLine(number + " multiplied by " + randomNumber + " equals " + result + "\n");
 
             Console.ReadLine();
+
+            return result;
         }
 
-        public static void Div(int number)
+        public static int Div(int number)
         {
             Random random = new Random();
             int randomNumber = random.Next(1, 10);
@@ -28,16 +30,19 @@ namespace Method_Assigment
 
             Console.ReadLine();
 
+            return result;
 
         }
 
-        public static void SquareRoot(int number)
+        public static double SquareRoot(int number)
         {
             double result = Math.Sqrt(number);
 
             Console.WriteLine("The Square root of " + number + " is " + result);
 
             Console.ReadLine();
+
+            return result;
 
         }
     }
